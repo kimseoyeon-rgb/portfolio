@@ -1,0 +1,11 @@
+@mixin responsive ($break) {
+    @if $break == small-screens {
+        @media (min-width: $break-small) { //360px
+            @content;
+        }
+    } @else if $break == large-screens {
+        @media (min-width: $break-large) { //1024px
+            @content;
+        }
+    }
+}

@@ -1,0 +1,231 @@
+@import './style.scss';
+@import './reset.scss';
+@import './mixin.scss';
+body {
+    background-color: $black-color;
+    position: relative;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    // background-color: #acacac;
+    @include responsive(large-screens) {
+        padding: 0 10px;
+    }
+}
+
+.gradation-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%; height: 50rem;
+    background: radial-gradient(circle at 50% -10%, #b5a7d1 20%, #6c5c92 40%, #575d9c 60%, #131313 100%);
+    filter: blur(40px);
+    // -webkit-filter: blur(10px);
+}
+/* header */
+.logo-menu-box {
+    .header-flex-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        .logo {
+            h1 {
+                font-family: $title-font;
+                font-weight: 500;
+                font-size: 2.66rem;
+
+                @include responsive(large-screens) {
+                    font-size: 5.3333rem;
+                }
+            }
+        }
+        .menu {
+            display: none;
+
+            @include responsive(large-screens) {
+                display: block;
+                width: 50%;
+            }
+            .gnb {
+                @include responsive(large-screens) {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+
+                li {
+                    @include responsive(large-screens) {
+                        font-family: $title-font;
+                        font-weight: 400;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    } //header-flex-box
+} //logo-menu-box
+
+/* main */
+.intro {
+    margin-top: 3.5rem;
+    margin-bottom: 8rem;
+    @include responsive(large-screens) {
+        margin-top: 10rem;
+        margin-bottom: 20.8rem;
+    }
+    .txt-img-box {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include responsive(large-screens) {
+            position: relative;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .txt {
+            @include responsive(large-screens) {
+                width: 55%;
+            }
+            h2 {
+                font-family: $title-font;
+                font-weight: 600;
+                font-size: 6.667rem;
+                line-height: 6.26rem;
+                margin-bottom: 2.5rem;
+
+                @include responsive(large-screens) {
+                    font-size: 7.67rem;
+                    line-height: 6.5rem;
+                    margin-bottom: 5rem;
+                }
+
+            }
+            p {
+                font-family: $kor-font;
+                font-weight: 500;
+                font-size: 1.6rem;
+
+                @include responsive(large-screens) {
+                    font-size: 2.1rem;
+                    line-height: 3.2rem;
+                }
+            }
+            #first-intro {
+                margin-bottom: 2rem;
+            }
+            #last-intro {
+                margin-bottom: 4.7rem;
+            }
+            ul {
+                width: 53%;
+                margin: 0 auto;
+                text-align: center;
+
+                @include responsive(large-screens) {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 552.19px;
+                    text-align: left;
+                    margin: 0;
+                }
+                li {
+                    &:first-child {
+                        h3 {
+                            color: $lime-color;
+                        }
+                    }
+                    &:nth-child(2) {
+                        h3 {
+                            color: $blue-color;
+                        }
+                    }
+                    &:last-child {
+                        h3 {
+                            color: $purple-color;
+                        }
+                    }
+                    margin-bottom: 3rem;
+                    h3 {
+                        font-family: $kor-font;
+                        font-weight: 600;
+                        font-size: 3.2rem;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font-family: $kor-font;
+                        font-weight: 300;
+                        font-size: 1.86rem;
+                    }
+                } //li
+            } //ul
+        } //txt
+        .img {
+            width: 100%;
+            @include responsive(large-screens) {
+                position: absolute;
+                right: 0; top: -6rem;
+                width: 58%;
+            }
+        }
+    } //txt-img-box
+} //intro
+
+.section-title {
+    font-family: $pare-font;
+    font-weight: 300;
+    font-size: 6rem;
+    color: $lime-color;
+    text-align: center;
+    span {
+        display: contents;
+        font-family: $title-font;
+        color: $lime-color;
+        white-space: nowrap;
+    }
+}
+
+.about-me {
+    .section-intro-txt {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        h3 {
+            font-family: $title-font;
+            font-weight: 600;
+            font-size: 3.2rem;
+            color: $lime-color;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-family: $tag-font;
+            font-weight: 400;
+            font-size: 2.13rem;
+        }
+    } //section-intro-txt
+    .img-txt-box {
+        .circled-box {
+            position: relative;
+            .gradation-circle {
+                width: 85.36%;
+                height: 28rem; border-radius: 14rem;
+                margin: 0 auto;
+                background: linear-gradient(to bottom right, #d1c9e4 30%, #f2f8ff 70%, #bedb6b 100%);
+                filter: blur(5px);
+            }
+            .black-circle {
+                position: absolute;
+                top: 3px; left: 28px;
+                width: 83.23%;
+                height: 27.3rem; border-radius: 13.65rem;
+                vertical-align: middle;
+                background-color: $black-color;
+            }
+            
+
+        }
+    }
+} //about-me
