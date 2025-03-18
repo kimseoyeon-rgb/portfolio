@@ -491,4 +491,181 @@ body {
   .about-me .img-txt-box .about-txt .txt-list li.main-tag .inter-list li {
     font-size: 2.93rem;
   }
+}
+
+.myskills {
+  margin-bottom: 80px;
+}
+@media (min-width: 1024px) {
+  .myskills {
+    margin-bottom: 207px;
+  }
+}
+.myskills h2.section-title {
+  margin-bottom: 40px;
+  color: #c2b2d7;
+}
+.myskills h2.section-title #title-txt {
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .myskills h2.section-title {
+    margin-bottom: 143px;
+  }
+}
+.myskills .skill-list {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-gap: 2%;
+}
+@media (min-width: 1024px) {
+  .myskills .skill-list {
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-template-rows: 53% 53%;
+    grid-gap: 2%;
+  }
+}
+.myskills .skill-list li {
+  width: 100%;
+}
+.myskills .skill-list li .squared-box {
+  width: 100%;
+  position: relative;
+}
+.myskills .skill-list li .squared-box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.myskills .skill-list li .squared-box .gradient-square {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to right bottom, #d9d3e6 30%, #908fc6 60%, #695490 100%);
+  border-radius: 10%;
+  filter: blur(3px);
+}
+.myskills .skill-list li .squared-box .black-square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 98%;
+  border-radius: 10%;
+  padding: 12%;
+  background-color: #131313;
+}
+.myskills .skill-list li .squared-box .black-square .skill-title {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.myskills .skill-list li .squared-box .black-square .skill-title strong {
+  font-size: 1.8667rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+@media (min-width: 1024px) {
+  .myskills .skill-list li .squared-box .black-square .skill-title strong {
+    font-size: 2.6667rem;
+    margin-bottom: 10px;
+  }
+}
+.myskills .skill-list li .squared-box .black-square .skill-title h3.persent {
+  font-size: 4rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 700;
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .myskills .skill-list li .squared-box .black-square .skill-title h3.persent {
+    font-size: 6.6667rem;
+  }
+}
+.myskills .skill-list li .squared-box .black-square .skill-title .icon {
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  right: 0;
+  bottom: 0;
+}
+@media (min-width: 1024px) {
+  .myskills .skill-list li .squared-box .black-square .skill-title .icon {
+    width: 43%;
+    height: 43%;
+  }
+}
+.myskills .skill-list li .squared-box .black-square .skill-title .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio h2.section-title {
+  margin-bottom: 40px;
+}
+.portfolio .web .portfolio-title {
+  display: block;
+  width: 37%;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-size: 3.3333rem;
+  font-weight: 300;
+  line-height: 3.0667rem;
+  color: #b3d335;
+  margin-bottom: 40px;
+}
+.portfolio .web .web-work-list li.work-li {
+  margin-bottom: 40px;
+}
+.portfolio .web .web-work-list li.work-li img {
+  margin-bottom: 15px;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .work-title {
+  margin-bottom: 15px;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .work-title h4 {
+  font-family: pretendard, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #b3d335;
+  margin-bottom: 8px;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .work-title .work-tag-list {
+  display: flex;
+  gap: 8px;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .work-title .work-tag-list li {
+  font-family: acumin-pro, sans-serif;
+  font-size: 1.3rem;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list {
+  display: flex;
+  gap: 5%;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li {
+  width: 12%;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li a {
+  display: block;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li a .icon-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1.6px solid #b3d335;
+  border-radius: 50%;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li a .icon-wrap::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+.portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li a .icon-wrap img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 65%;
 }/*# sourceMappingURL=index.css.map */
