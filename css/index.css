@@ -605,6 +605,17 @@ body {
 .portfolio h2.section-title {
   margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .portfolio h2.section-title {
+    margin-bottom: 207px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio .web {
+    display: flex;
+    gap: 18%;
+  }
+}
 .portfolio .web .portfolio-title {
   display: block;
   width: 37%;
@@ -615,14 +626,43 @@ body {
   color: #b3d335;
   margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .portfolio .web .portfolio-title {
+    font-size: 8rem;
+    line-height: 7.6rem;
+  }
+}
 .portfolio .web .web-work-list li.work-li {
   margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li {
+    margin-bottom: 56px;
+  }
+}
 .portfolio .web .web-work-list li.work-li img {
+  width: 100%;
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li img {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li .title-btn-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .portfolio .web .web-work-list li.work-li .title-btn-box .work-title {
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li .title-btn-box .work-title {
+    margin: 0;
+  }
 }
 .portfolio .web .web-work-list li.work-li .title-btn-box .work-title h4 {
   font-family: pretendard, sans-serif;
@@ -630,6 +670,11 @@ body {
   font-weight: 600;
   color: #b3d335;
   margin-bottom: 8px;
+}
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li .title-btn-box .work-title h4 {
+    font-size: 3.5rem;
+  }
 }
 .portfolio .web .web-work-list li.work-li .title-btn-box .work-title .work-tag-list {
   display: flex;
@@ -639,12 +684,23 @@ body {
   font-family: acumin-pro, sans-serif;
   font-size: 1.3rem;
 }
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li .title-btn-box .work-title .work-tag-list li {
+    font-size: 1.9rem;
+  }
+}
 .portfolio .web .web-work-list li.work-li .title-btn-box .btn-list {
   display: flex;
-  gap: 5%;
+  gap: 2%;
 }
 .portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li {
-  width: 12%;
+  width: 8%;
+  max-width: 44px;
+}
+@media (min-width: 1024px) {
+  .portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li {
+    width: 44px;
+  }
 }
 .portfolio .web .web-work-list li.work-li .title-btn-box .btn-list li a {
   display: block;
@@ -668,4 +724,60 @@ body {
   transform: translate(-50%, -50%);
   width: 65%;
   height: 65%;
+}
+.portfolio .Design {
+  margin-top: 65px;
+}
+@media (min-width: 1024px) {
+  .portfolio .Design {
+    display: flex;
+  }
+}
+.portfolio .Design h2.portfolio-title {
+  display: block;
+  width: 37%;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-size: 3.3333rem;
+  font-weight: 300;
+  line-height: 3.0667rem;
+  color: #b3d335;
+  margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .portfolio .Design h2.portfolio-title {
+    font-size: 8rem;
+    line-height: 7.6rem;
+  }
+}
+.portfolio .Design ul.design-work-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media (min-width: 1024px) {
+  .portfolio .Design ul.design-work-list {
+    width: 66.197%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+.portfolio .Design ul.design-work-list li {
+  width: 100%;
+  height: 100%;
+}
+.portfolio .Design ul.design-work-list li a div.out-box {
+  position: relative;
+  width: 100%;
+  background-color: pink;
+}
+.portfolio .Design ul.design-work-list li a div.out-box::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+.portfolio .Design ul.design-work-list li a div.out-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
 }/*# sourceMappingURL=index.css.map */
