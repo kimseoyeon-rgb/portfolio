@@ -130,6 +130,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
+  position: relative;
 }
 .logo-menu-box .header-flex-box .logo h1 {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
