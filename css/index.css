@@ -780,4 +780,133 @@ body {
   width: 100%;
   height: 100%;
   background-color: skyblue;
+}
+
+.contact {
+  margin-top: 65px;
+}
+@media (min-width: 1024px) {
+  .contact {
+    margin-top: 207px;
+    margin-bottom: 207px;
+  }
+}
+.contact .section-title {
+  color: #c2b2d7;
+  margin-bottom: 40px;
+}
+.contact .section-title span {
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .contact .section-title {
+    margin-bottom: 135px;
+  }
+}
+.contact .address-list {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .contact .address-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contact .address-list li {
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .contact .address-list li {
+    margin-bottom: 0;
+  }
+}
+.contact .address-list li h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .contact .address-list li h3 {
+    font-size: 4.6667rem;
+  }
+}
+.contact .address-list li p {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .contact .address-list li p {
+    font-size: 4.6667rem;
+  }
+}
+.contact .address-list li mail {
+  font-size: 2.1333rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+}
+.contact .address-list li mail:hover {
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .contact .address-list li mail {
+    font-size: 3.2rem;
+  }
+}
+.contact .address-list li a {
+  font-size: 2.1333rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  color: #fafaf8;
+}
+.contact .address-list li a:hover {
+  color: #c2b2d7;
+}
+@media (min-width: 1024px) {
+  .contact .address-list li a {
+    font-size: 3.2rem;
+  }
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #c2b2d7;
+  text-align: center;
+}
+footer .footer-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+footer .footer-txt h2 {
+  font-size: 2.4rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 600;
+  color: #394191;
+  margin-bottom: 25px;
+}
+footer .footer-txt p.right {
+  font-size: 1.6rem;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 600;
+  color: #394191;
+  margin-bottom: 5px;
+}
+footer .footer-txt p.notice {
+  font-size: 1.3rem;
+  font-family: pretendard, sans-serif;
+  line-height: 2.3rem;
+  color: #394191;
+}
+@media (min-width: 1024px) {
+  footer .footer-txt p.notice {
+    text-wrap: nowrap;
+  }
 }/*# sourceMappingURL=index.css.map */
