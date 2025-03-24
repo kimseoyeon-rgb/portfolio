@@ -30,6 +30,7 @@ body {
     .header-flex-box {
         width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         align-items: center;
         margin-top: 5rem;
@@ -45,12 +46,42 @@ body {
                 }
             }
         }
-        .menu {
-            display: none;
-
+        .slide-open {
             @include responsive(large-screens) {
+                display: none;
+            }
+        }
+        @include responsive(small-screens) {
+            .menu {
+                transform: translate(-130%);
+                display: block;
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%;
+                transition: transform 0.3s;
+
+                li {
+                    a {
+                        display: block;
+                        padding: 20px;
+                        border-bottom: 1px solid $white-color;
+                        font-size: 2.5rem;
+                        color: $white-color;
+                        background-color: $black-color;
+                    }
+                }
+            }
+            .menu.on {
+                transform: translate(0%);
+            }
+        }
+        .menu {
+            @include responsive(large-screens) {
+                position: relative;
+                transform: translate(0%);
                 display: block;
                 width: 50%;
+                background-color: transparent;
             }
             .gnb {
                 @include responsive(large-screens) {
@@ -64,6 +95,12 @@ body {
                         font-family: $title-font;
                         font-weight: 400;
                         font-size: 2.5rem;
+                        
+                        a {
+                            color: $white-color;
+                            background-color: transparent;
+                            border-bottom: none;
+                        }
                     }
                 }
             }
@@ -195,8 +232,8 @@ body {
     }
 }
 
-.about-me {
-    margin-bottom: 80px;
+#about-me {
+    margin-bottom: 150px;
     @include responsive(large-screens) {
         margin-bottom: 208px;
     }
@@ -382,7 +419,7 @@ body {
 } //about-me
 
 .myskills {
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     @include responsive(large-screens) {
         margin-bottom: 207px;
     }
@@ -482,7 +519,7 @@ body {
 } //my-skills
 .portfolio {
     h2.section-title {
-        margin-bottom: 40px;
+        margin-bottom: 150px;
         @include responsive(large-screens) {
             margin-bottom: 207px;
         }
