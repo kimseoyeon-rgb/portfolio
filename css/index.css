@@ -844,7 +844,7 @@ body {
 }
 #myskills .skill-list li .squared-box .black-square .skill-title .hover-txt p {
   font-size: 1.236rem;
-  line-height: auto;
+  line-height: 2rem;
 }
 
 #portfolio h2.section-title {

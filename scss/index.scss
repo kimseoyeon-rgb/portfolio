@@ -746,11 +746,9 @@ body {
                             width: 100%;
 
                             p {
-                                font-size: 0.7rem;
-                                @include responsive(large-screens) {
-                                    font-size: 1.236rem;
-                                    line-height: auto;
-                                }
+                                font-size: 1.236rem;
+                                line-height: 2rem;
+                            }
                         }
                     }
                 }
@@ -926,7 +924,6 @@ body {
             grid-gap: 0;
             border: none;
             grid-template-columns: 50% 50%;
-
             @include responsive(large-screens) {
                 width: 79.197%;
             }
@@ -1094,7 +1091,11 @@ footer {
             font-family: $kor-font;
             line-height: 2.3rem;
             color: $blue-color;
+
             @include responsive(large-screens) {
                 text-wrap: nowrap;
             }
+
         }
+    }
+}
