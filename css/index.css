@@ -823,7 +823,7 @@ body {
   display: none;
 }
 #myskills .skill-list li .squared-box .black-square {
-  opacity: 0.6;
+  background: #131313 0.3;
 }
 #myskills .skill-list li .squared-box .black-square .skill-title {
   position: relative;
