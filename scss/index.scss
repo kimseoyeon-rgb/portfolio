@@ -731,7 +731,7 @@ body {
                     }
                 } //blcak-square
                 .black-square {
-                    background: $black-color 0.3;
+                    background: rgba($color: #131313, $alpha: 0.6);
                     .skill-title {
                         position: relative;
                         .icon {
