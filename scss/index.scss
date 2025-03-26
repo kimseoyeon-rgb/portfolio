@@ -687,6 +687,8 @@ body {
                     padding: 12%;
 
                     background-color: $black-color;
+                    transition: background-color 0.5s,;
+
                     .skill-title {
                         position: relative;
                         width: 100%; height: 100%;
@@ -696,9 +698,12 @@ body {
                             font-weight: 300;
                             margin-bottom: 5px;
 
+                            transition: font-size 0.5s;
+
                             @include responsive(large-screens) {
                                 font-size: 2.6667rem;
                                 margin-bottom: 10px;
+                                transition: font-size 0.5s;
                             }
                         }
                         h3.persent {
@@ -707,8 +712,11 @@ body {
                             font-weight: 700;
                             color: $purple-color;
 
+                            transition: font-size 0.5s;
+
                             @include responsive(large-screens) {
                                 font-size: 6.6667rem;
+                                transition: font-size 0.5s;
                             }
                         }
 
@@ -716,6 +724,12 @@ body {
                             position: absolute;
                             width: 30%; height: 30%;
                             right: 0; bottom: 0;
+                            transition: position 0.5s;
+                            transition: top 1.5s;
+                            transition: right 1.5s;
+                            transition: width 0.7s;
+                            transition: height 0.7s;
+
 
                             @include responsive(large-screens) {
                                 width: 37%; height: 37%;
@@ -730,24 +744,42 @@ body {
                         display: none;
                     }
                 } //blcak-square
-                .black-square {
+
+                .black-square.skillHover {
                     background: rgba($color: #131313, $alpha: 0.6);
-                    .skill-title {
-                        position: relative;
-                        .icon {
+
+                    .skill-title.skillHover {
+                            strong.skillHover {
+                                font-size: 1.2rem;
+                                @include responsive(large-screens) {
+                                    font-size: 2rem;
+                                }
+
+                            }
+                            h3.skillHover {
+                                font-size: 3rem;
+                                @include responsive(large-screens) {
+                                    font-size: 4.8rem;
+                                }
+                            }
+                        .icon.skillHover {
                             position: absolute;
                             top: 0; right: 0;
                             width: 27%; height: 27%;
                         }
-                        .hover-txt {
+                        .hover-txt.skillHover {
                             display: block;
                             position: absolute;
                             bottom: 0; left: 0;
                             width: 100%;
 
-                            p {
-                                font-size: 1.236rem;
+                            p.skillHover {
+                                font-size: 1.6rem;
                                 line-height: 2rem;
+
+                                @include responsive(large-screens) {
+                                    font-size: 1.3rem;
+                                }
                             }
                         }
                     }
@@ -934,7 +966,8 @@ body {
                     border: none;
                     &:hover {
                         div.out-box {
-                            border-radius: 50%;
+                            transform: scale(1.02);
+                            z-index: 999;
                         }
                     }
                     div.out-box {
@@ -942,7 +975,7 @@ body {
                         width: 100%;
                         background-color: antiquewhite;
                         border: none;
-                        transition: border-radius 0.35s;
+                        transition: transform 0.5s, z-index 0.5s;
 
                         &::after {
                             display: block;
@@ -1031,7 +1064,7 @@ body {
                     font-size: 4.6667rem;
                 }
             }
-            mail {
+            a.mail {
                 font-size: 2.1333rem;
                 font-family: $tag-font;
                 font-weight: 400;

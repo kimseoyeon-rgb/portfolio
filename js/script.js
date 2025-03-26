@@ -33,6 +33,7 @@ $(function () {
     })
 });
 
+/* 스크롤위치값 뽑기 --> 작업용입니다 */
 $(document).ready(function () {
     $(document).on("mousedown", function (event) {
         if (event.which === 1) { // 마우스 좌클릭 (1: 좌클릭, 2: 휠클릭, 3: 우클릭)
@@ -182,6 +183,28 @@ $(document).ready(function() {
         }
     });
 });
+
+$(function() {
+    /* skills 호버 효과 */
+    $(".squared-box").mouseover(function() {
+        $(this).children(".black-square").addClass("skillHover");
+        $(this).find(".skill-title").addClass("skillHover");
+        $(this).find(".skill-title").children("strong").addClass("skillHover");
+        $(this).find(".skill-title").children("h3").addClass("skillHover");
+        $(this).find(".icon").addClass("skillHover");
+        $(this).find(".hover-txt").addClass("skillHover");
+        $(this).find(".hover-txt").children("p").addClass("skillHover");
+
+    });
+    $(".squared-box").mouseout(function() {
+        $(this).children(".black-square").removeClass("skillHover");
+        $(this).find(".skill-title").removeClass("skillHover");
+        $(this).find(".skill-title").children("strong").removeClass("skillHover");
+        $(this).find(".skill-title").children("h3").removeClass("skillHover");
+        $(this).find(".hover-txt").removeClass("skillHover");
+
+    })
+})
 
 
 

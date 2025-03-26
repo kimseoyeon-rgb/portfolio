@@ -773,6 +773,7 @@ body {
   border-radius: 10%;
   padding: 12%;
   background-color: #131313;
+  transition: background-color 0.5s;
 }
 #myskills .skill-list li .squared-box .black-square .skill-title {
   position: relative;
@@ -784,11 +785,13 @@ body {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
   font-weight: 300;
   margin-bottom: 5px;
+  transition: font-size 0.5s;
 }
 @media (min-width: 1024px) {
   #myskills .skill-list li .squared-box .black-square .skill-title strong {
     font-size: 2.6667rem;
     margin-bottom: 10px;
+    transition: font-size 0.5s;
   }
 }
 #myskills .skill-list li .squared-box .black-square .skill-title h3.persent {
@@ -796,10 +799,12 @@ body {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
   font-weight: 700;
   color: #c2b2d7;
+  transition: font-size 0.5s;
 }
 @media (min-width: 1024px) {
   #myskills .skill-list li .squared-box .black-square .skill-title h3.persent {
     font-size: 6.6667rem;
+    transition: font-size 0.5s;
   }
 }
 #myskills .skill-list li .squared-box .black-square .skill-title .icon {
@@ -808,6 +813,11 @@ body {
   height: 30%;
   right: 0;
   bottom: 0;
+  transition: position 0.5s;
+  transition: top 1.5s;
+  transition: right 1.5s;
+  transition: width 0.7s;
+  transition: height 0.7s;
 }
 @media (min-width: 1024px) {
   #myskills .skill-list li .squared-box .black-square .skill-title .icon {
@@ -822,29 +832,47 @@ body {
 #myskills .skill-list li .squared-box .black-square .hover-txt {
   display: none;
 }
-#myskills .skill-list li .squared-box .black-square {
+#myskills .skill-list li .squared-box .black-square.skillHover {
   background: rgba(19, 19, 19, 0.6);
 }
-#myskills .skill-list li .squared-box .black-square .skill-title {
-  position: relative;
+#myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover strong.skillHover {
+  font-size: 1.2rem;
 }
-#myskills .skill-list li .squared-box .black-square .skill-title .icon {
+@media (min-width: 1024px) {
+  #myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover strong.skillHover {
+    font-size: 2rem;
+  }
+}
+#myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover h3.skillHover {
+  font-size: 3rem;
+}
+@media (min-width: 1024px) {
+  #myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover h3.skillHover {
+    font-size: 4.8rem;
+  }
+}
+#myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover .icon.skillHover {
   position: absolute;
   top: 0;
   right: 0;
   width: 27%;
   height: 27%;
 }
-#myskills .skill-list li .squared-box .black-square .skill-title .hover-txt {
+#myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover .hover-txt.skillHover {
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-#myskills .skill-list li .squared-box .black-square .skill-title .hover-txt p {
-  font-size: 1.236rem;
+#myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover .hover-txt.skillHover p.skillHover {
+  font-size: 1.6rem;
   line-height: 2rem;
+}
+@media (min-width: 1024px) {
+  #myskills .skill-list li .squared-box .black-square.skillHover .skill-title.skillHover .hover-txt.skillHover p.skillHover {
+    font-size: 1.3rem;
+  }
 }
 
 #portfolio h2.section-title {
@@ -1041,14 +1069,15 @@ body {
   border: none;
 }
 #portfolio .Design ul.design-work-list li a:hover div.out-box {
-  border-radius: 50%;
+  transform: scale(1.02);
+  z-index: 999;
 }
 #portfolio .Design ul.design-work-list li a div.out-box {
   position: relative;
   width: 100%;
   background-color: antiquewhite;
   border: none;
-  transition: border-radius 0.35s;
+  transition: transform 0.5s, z-index 0.5s;
 }
 #portfolio .Design ul.design-work-list li a div.out-box::after {
   display: block;
@@ -1129,16 +1158,16 @@ body {
     font-size: 4.6667rem;
   }
 }
-#contact .address-list li mail {
+#contact .address-list li a.mail {
   font-size: 2.1333rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
 }
-#contact .address-list li mail:hover {
+#contact .address-list li a.mail:hover {
   color: #c2b2d7;
 }
 @media (min-width: 1024px) {
-  #contact .address-list li mail {
+  #contact .address-list li a.mail {
     font-size: 3.2rem;
   }
 }
