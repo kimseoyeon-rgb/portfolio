@@ -964,31 +964,114 @@ body {
                 width: 100%; height: 100%;
                 a {
                     border: none;
-                    &:hover {
-                        div.out-box {
-                            transform: scale(1.02);
-                            z-index: 999;
-                        }
-                    }
                     div.out-box {
                         position: relative;
                         width: 100%;
-                        background-color: antiquewhite;
+                        max-width: 483.922px;
                         border: none;
-                        transition: transform 0.5s, z-index 0.5s;
 
                         &::after {
                             display: block;
                             content: '';
                             padding-bottom: 100%;
                         }
-                        img {
+                        #detail {
                             position: absolute;
                             top: 0; left: 0;
                             width: 100%;
                             height: 100%;
                             border: none;
-                            // background-color: skyblue;
+                            transition: background-size 0.5s;
+                            background: url(../images/detialpage1.jpg) center center no-repeat;
+                        }
+                        #package {
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            transition: background-size 0.5s;
+                            background: url(../images/package1.jpg) center center no-repeat;
+                        }
+                        #banner {
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            transition: background-size 0.5s;
+                            background: url(../images/banner1.jpg) center center no-repeat;
+                        }
+                        #cardnews {
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            transition: background-size 0.5s;
+                            background: url(../images/cardnews1.jpg) center center no-repeat;
+                        }
+                        #characterDrawing {
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            transition: background-size 0.5s;
+                            background: url(../images/character-drawing.jpg) center center no-repeat;
+                        }
+                        #infographic {
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            transition: background-size 0.5s;
+                            background: url(../images/infographic1.jpg) center center no-repeat;
+                        }
+                        div.hover-black-box {
+                            display: none;
+                            transition: transform 0.5s;
+                            transition: z-index 0.5s;
+                        }
+                        div.hover-black-box.hoverstyle {
+                            display: block;
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 100%; height: 100%;
+                            background: rgba($color: $black-color, $alpha: 0.8);
+                            padding: 5%;
+                            @include responsive(large-screens) {
+                                padding: 6.5%;
+                            }
+                            div.text-box {
+                                position: relative;
+                                width: 100%; height: 100%;
+                                h2 {
+                                    font-family: $kor-font;
+                                    font-size: 3rem;
+                                    color: $lime-color;
+                                    @include responsive(large-screens) {
+                                        font-size: 5rem;
+                                    }
+                                }
+                                .work-sub-txt {
+                                    position: absolute;
+                                    bottom: 0;
+                                    p {
+                                        color: $white-color;
+                                        &:first-of-type {
+                                            font-family: $title-font;
+                                        }
+                                        font-size: 1.4rem;
+                                        font-family: $kor-font;
+                                        @include responsive(large-screens) {
+                                            font-size: 2rem;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 } //a

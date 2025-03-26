@@ -1068,29 +1068,129 @@ body {
 #portfolio .Design ul.design-work-list li a {
   border: none;
 }
-#portfolio .Design ul.design-work-list li a:hover div.out-box {
-  transform: scale(1.02);
-  z-index: 999;
-}
 #portfolio .Design ul.design-work-list li a div.out-box {
   position: relative;
   width: 100%;
-  background-color: antiquewhite;
+  max-width: 483.922px;
   border: none;
-  transition: transform 0.5s, z-index 0.5s;
 }
 #portfolio .Design ul.design-work-list li a div.out-box::after {
   display: block;
   content: "";
   padding-bottom: 100%;
 }
-#portfolio .Design ul.design-work-list li a div.out-box img {
+#portfolio .Design ul.design-work-list li a div.out-box #detail {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  transition: background-size 0.5s;
+  background: url(../images/detialpage1.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box #package {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: background-size 0.5s;
+  background: url(../images/package1.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box #banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: background-size 0.5s;
+  background: url(../images/banner1.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box #cardnews {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: background-size 0.5s;
+  background: url(../images/cardnews1.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box #characterDrawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: background-size 0.5s;
+  background: url(../images/character-drawing.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box #infographic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: background-size 0.5s;
+  background: url(../images/infographic1.jpg) center center no-repeat;
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box {
+  display: none;
+  transition: transform 0.5s;
+  transition: z-index 0.5s;
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle {
+  display: block;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 0.8);
+  padding: 5%;
+}
+@media (min-width: 1024px) {
+  #portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle {
+    padding: 6.5%;
+  }
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box h2 {
+  font-family: pretendard, sans-serif;
+  font-size: 3rem;
+  color: #b3d335;
+}
+@media (min-width: 1024px) {
+  #portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box h2 {
+    font-size: 5rem;
+  }
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box .work-sub-txt {
+  position: absolute;
+  bottom: 0;
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box .work-sub-txt p {
+  color: #fafaf8;
+  font-size: 1.4rem;
+  font-family: pretendard, sans-serif;
+}
+#portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box .work-sub-txt p:first-of-type {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+}
+@media (min-width: 1024px) {
+  #portfolio .Design ul.design-work-list li a div.out-box div.hover-black-box.hoverstyle div.text-box .work-sub-txt p {
+    font-size: 2rem;
+  }
 }
 
 #contact {

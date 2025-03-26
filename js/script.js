@@ -50,7 +50,7 @@ $(document).ready(function () {
             var scrollPoint1 = 450; // 스크롤 기준값
             var scrollPoint2 = 2600; // 스크롤 기준값
             var scrollPoint3 = 3860; // 스크롤 기준값
-            var scrollPoint4 = 7100; // 스크롤 기준값
+            var scrollPoint4 = 7200; // 스크롤 기준값
             var $target1 = $("#about-me .section-title"); // 클래스를 추가할 요소
             var $target2 = $("#myskills .section-title"); // 클래스를 추가할 요소
             var $target3 = $("#portfolio .section-title"); // 클래스를 추가할 요소
@@ -89,9 +89,9 @@ $(document).ready(function () {
     if ($(window).width() < 1024) {
         function addClassOnScroll() {
             var scrollPoint1 = 260; // 스크롤 기준값
-            var scrollPoint2 = 2390; // 스크롤 기준값
-            var scrollPoint3 = 3500; // 스크롤 기준값
-            var scrollPoint4 = 5470; // 스크롤 기준값
+            var scrollPoint2 = 2000; // 스크롤 기준값
+            var scrollPoint3 = 3200; // 스크롤 기준값
+            var scrollPoint4 = 4900; // 스크롤 기준값
             var $target1 = $("#about-me .section-title"); // 클래스를 추가할 요소
             var $target2 = $("#myskills .section-title"); // 클래스를 추가할 요소
             var $target3 = $("#portfolio .section-title"); // 클래스를 추가할 요소
@@ -204,6 +204,22 @@ $(function() {
         $(this).find(".hover-txt").removeClass("skillHover");
 
     })
+
+    /* design-work-hover */
+    $(".design-work-list").find("a").mouseover(function() {
+        $(this).find(".hover-black-box").stop().addClass("hoverstyle");
+    })
+    $(".design-work-list").find("a").mouseout(function() {
+        $(this).find(".hover-black-box").stop().removeClass("hoverstyle");
+    })
+
+    $(".design-work-list").find("a").mouseover(function() {
+        $(this).find(".bgImg").stop().css("background-size", "110%");
+    })
+    $(".design-work-list").find("a").mouseout(function() {
+        $(this).find(".bgImg").stop().css("background-size", "100%");
+    })
+
 })
 
 
