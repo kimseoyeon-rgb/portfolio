@@ -33,17 +33,6 @@ $(function () {
     })
 });
 
-/* 스크롤위치값 뽑기 --> 작업용입니다 */
-$(document).ready(function () {
-    $(document).on("mousedown", function (event) {
-        if (event.which === 1) { // 마우스 좌클릭 (1: 좌클릭, 2: 휠클릭, 3: 우클릭)
-            var scrollPosition = $(window).scrollTop();
-            console.log("현재 스크롤 위치: " + scrollPosition + "px");
-        }
-    });
-});
-
-
 $(document).ready(function () {
     if ($(window).width() >= 1024) {
         function addClassOnScroll() {
@@ -237,39 +226,39 @@ $(function() {
     })
     //각 버튼마다 이미지 바꾸기
     //고요화
-    $(".web-work-list > .goyohwa #project > a").click(function() {
+    $(".web-work-list > .goyohwa .project > a").click(function() {
         $("#modal img").attr({
             "src": "./images/project_GOYOHWA.jpg",
             "alt": "project_GOYOHWA"
         })
     });
-    $(".web-work-list > .goyohwa #design-guide > a").click(function() {
+    $(".web-work-list > .goyohwa .design-guide > a").click(function() {
         $("#modal img").attr({
             "src": "./images/Designguide_GOYOWHA.png",
             "alt": "DesignGuide_GOYOHWA"
         })
     })
     //다락
-    $(".web-work-list > .darak #project > a").click(function() {
+    $(".web-work-list > .darak .project > a").click(function() {
         $("#modal img").attr({
             "src": "./images/project_Darak.png",
             "alt": "project_DARAK"
         });
     });
-    $(".web-work-list > .darak #design-guide > a").click(function() {
+    $(".web-work-list > .darak .design-guide > a").click(function() {
         $("#modal img").attr({
             "src": "",
             "alt": "DesignGuide_DARAK"
         });
     });
     //샐러디
-    $(".web-work-list > .salady #project > a").click(function() {
+    $(".web-work-list > .salady .project > a").click(function() {
         $("#modal img").attr({
             "src": "",
             "alt": "project_salady"
         });
     });
-    $(".web-work-list > .salady #design-guide > a").click(function() {
+    $(".web-work-list > .salady .design-guide > a").click(function() {
         $("#modal img").attr({
             "src": "",
             "alt": "DesignGuide_salady"

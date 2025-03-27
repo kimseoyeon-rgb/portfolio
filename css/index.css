@@ -794,7 +794,7 @@ body {
   margin-bottom: 40px;
   color: #c2b2d7;
 }
-#myskills h2.section-title #title-txt {
+#myskills h2.section-title .title-txt {
   color: #c2b2d7;
 }
 @media (min-width: 1024px) {
