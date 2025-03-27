@@ -1,0 +1,88 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'S-Core Dream 4';
+    src: url('S-CoreDream-4Regular.woff2') format('woff2'),
+        url('S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font: 400 16px 'S-Core Dream 4';
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 20px;
+}
+img,
+input,
+textarea,
+select {
+    vertical-align: middle; /* 수직 가운데 정렬 */
+}
+select {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    appearance: none;
+}
+select:focus {
+    outline: 0;
+}
+img {
+    width: 100%;
+}
+strong {
+    display: block;
+    font-style: normal;
+}
+address {
+    display: inline;
+    font-style: normal;
+}
+h1 {
+    font-size: 46px;
+}
+h2 {
+    font-size: 43px;
+}
+h3 {
+    font-size: 40px;
+}
+header,
+nav,
+main,
+aside,
+section,
+article,
+footer,
+select,
+button {
+    display: block;
+}
+input::-webkit-search-cancel-button {
+    /*서치 박스 속 서치 폼 > 텍스트 입력 시 보이는 x 제거*/
+    display: none;
+}

@@ -220,6 +220,96 @@ $(function() {
         $(this).find(".bgImg").stop().css("background-size", "100%");
     })
 
+    //웹
+    //모달 열려려
+    $(".btn-list").find("a").click(function() {
+        $(".blur-bg").addClass("on");
+        $("#modal").fadeIn();
+        $("body").css("overflow", "hidden");
+        $("#topbtn").css("display", "none");
+    });
+    $(".btn-list li:last-child a").click(function() {
+        $(".blur-bg").removeClass("on");
+        $("#modal").hide();
+        $("body").css("overflow", "scroll");
+        $("#topbtn").css("display", "block");
+    })
+    //각 버튼마다 이미지 바꾸기
+    //고요화
+    $(".web-work-list > .goyohwa #project > a").click(function() {
+        $("#modal img").attr({
+            "src": "./images/project_GOYOHWA.jpg",
+            "alt": "project_GOYOHWA"
+        })
+    });
+    $(".web-work-list > .goyohwa #design-guide > a").click(function() {
+        $("#modal img").attr({
+            "src": "./images/Designguide_GOYOWHA.png",
+            "alt": "DesignGuide_GOYOHWA"
+        })
+    })
+    //다락
+    $(".web-work-list > .darak #project > a").click(function() {
+        $("#modal img").attr({
+            "src": "./images/project_Darak.png",
+            "alt": "project_DARAK"
+        });
+    });
+
+    //디자인
+    /* 모달 열기 */
+    $(".design-work-list").find("a").click(function() {
+        $(".blur-bg").addClass("on");
+        $("#modal").fadeIn();
+        $("body").css("overflow", "hidden");
+        $("#topbtn").css("display", "none");
+    })
+
+    // 각 이미지 바꾸기
+    $("#detail").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_detailpage.png",
+            "alt": "work_detialpage"
+        });
+    });
+    $("#package").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_Package.jpg",
+            "alt": "work_Package"
+        });
+    });
+    $("#banner").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_banner.png",
+            "alt": "work_banner"
+        });
+    });
+    $("#cardnews").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_cardnews.jpg",
+            "alt": "work_cardnews"
+        });
+    });
+    $("#characterDrawing").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_drawing.jpg",
+            "alt": "work_Drawing"
+        });
+    });
+    $("#infographic").closest("a").click(function() {
+        $("#modal").find("img").attr({
+            "src": "./images/work_infographic.jpg",
+            "alt": "work_infographic"
+        });
+    });
+
+    /* 모달 닫기 */
+    $("#close-btn").click(function() {
+        $(".blur-bg").removeClass("on");
+        $("#modal").fadeOut();
+        $("body").css("overflow", "scroll");
+    })
+
 })
 
 

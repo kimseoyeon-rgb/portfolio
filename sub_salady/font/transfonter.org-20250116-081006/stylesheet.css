@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('NanumSquareRoundEB.woff2') format('woff2'),
+        url('NanumSquareRoundEB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('NanumSquareRoundB.woff2') format('woff2'),
+        url('NanumSquareRoundB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('NanumSquareRoundL.woff2') format('woff2'),
+        url('NanumSquareRoundL.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('NanumSquareRoundR.woff2') format('woff2'),
+        url('NanumSquareRoundR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
