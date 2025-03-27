@@ -221,10 +221,11 @@ $(function() {
     })
 
     //웹
-    //모달 열려려
+    //모달 열려
     $(".btn-list").find("a").click(function() {
         $(".blur-bg").addClass("on");
         $("#modal").fadeIn();
+        $("#modal").scrollTop(0);
         $("body").css("overflow", "hidden");
         $("#topbtn").css("display", "none");
     });
@@ -255,12 +256,32 @@ $(function() {
             "alt": "project_DARAK"
         });
     });
+    $(".web-work-list > .darak #design-guide > a").click(function() {
+        $("#modal img").attr({
+            "src": "",
+            "alt": "DesignGuide_DARAK"
+        });
+    });
+    //샐러디
+    $(".web-work-list > .salady #project > a").click(function() {
+        $("#modal img").attr({
+            "src": "",
+            "alt": "project_salady"
+        });
+    });
+    $(".web-work-list > .salady #design-guide > a").click(function() {
+        $("#modal img").attr({
+            "src": "",
+            "alt": "DesignGuide_salady"
+        });
+    });
 
     //디자인
     /* 모달 열기 */
     $(".design-work-list").find("a").click(function() {
         $(".blur-bg").addClass("on");
         $("#modal").fadeIn();
+        $("#modal").scrollTop(0);
         $("body").css("overflow", "hidden");
         $("#topbtn").css("display", "none");
     })
