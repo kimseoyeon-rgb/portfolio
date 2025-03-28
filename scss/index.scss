@@ -608,8 +608,16 @@ body {
             .txt-list {
                 li.main-tag {
                     margin-bottom: 3rem;
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        display: none;
+                    }
                     @include responsive(large-screens) {
                         margin-bottom: calc(50px + 1vh);
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                        display: block;
+                    }
                     }
 
                     &:nth-child(1) {

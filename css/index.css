@@ -683,9 +683,15 @@ body {
 #about-me .img-txt-box .about-txt .txt-list li.main-tag {
   margin-bottom: 3rem;
 }
+#about-me .img-txt-box .about-txt .txt-list li.main-tag:nth-child(2), #about-me .img-txt-box .about-txt .txt-list li.main-tag:nth-child(3) {
+  display: none;
+}
 @media (min-width: 1024px) {
   #about-me .img-txt-box .about-txt .txt-list li.main-tag {
     margin-bottom: calc(50px + 1vh);
+  }
+  #about-me .img-txt-box .about-txt .txt-list li.main-tag:nth-child(2), #about-me .img-txt-box .about-txt .txt-list li.main-tag:nth-child(3) {
+    display: block;
   }
 }
 @media (min-width: 1024px) {

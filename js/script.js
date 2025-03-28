@@ -36,14 +36,14 @@ $(function () {
 $(document).ready(function () {
     if ($(window).width() >= 1024) {
         function addClassOnScroll() {
-            var scrollPoint1 = 450; // 스크롤 기준값
-            var scrollPoint2 = 2600; // 스크롤 기준값
-            var scrollPoint3 = 3860; // 스크롤 기준값
-            var scrollPoint4 = 7200; // 스크롤 기준값
-            var $target1 = $("#about-me .section-title"); // 클래스를 추가할 요소
-            var $target2 = $("#myskills .section-title"); // 클래스를 추가할 요소
-            var $target3 = $("#portfolio .section-title"); // 클래스를 추가할 요소
-            var $target4 = $("#contact .section-title"); // 클래스를 추가할 요소
+            var scrollPoint1 = 450;
+            var scrollPoint2 = 2600;
+            var scrollPoint3 = 3860;
+            var scrollPoint4 = 7200;
+            var $target1 = $("#about-me .section-title"); 
+            var $target2 = $("#myskills .section-title"); 
+            var $target3 = $("#portfolio .section-title"); 
+            var $target4 = $("#contact .section-title"); 
 
             if ($(window).scrollTop() >= scrollPoint1) {
                 $target1.addClass("active");
@@ -69,7 +69,7 @@ $(document).ready(function () {
                 $target4.removeClass("active");
             }
         }
-        $(window).on("scroll", addClassOnScroll); // 스크롤 이벤트에 함수 연결
+        $(window).on("scroll", addClassOnScroll); 
     }
         
 });
@@ -77,14 +77,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     if ($(window).width() < 1024) {
         function addClassOnScroll() {
-            var scrollPoint1 = 260; // 스크롤 기준값
-            var scrollPoint2 = 2000; // 스크롤 기준값
-            var scrollPoint3 = 3200; // 스크롤 기준값
-            var scrollPoint4 = 4900; // 스크롤 기준값
-            var $target1 = $("#about-me .section-title"); // 클래스를 추가할 요소
-            var $target2 = $("#myskills .section-title"); // 클래스를 추가할 요소
-            var $target3 = $("#portfolio .section-title"); // 클래스를 추가할 요소
-            var $target4 = $("#contact .section-title"); // 클래스를 추가할 요소
+            var scrollPoint1 = 260; 
+            var scrollPoint2 = 2000; 
+            var scrollPoint3 = 3200; 
+            var scrollPoint4 = 4900; 
+            var $target1 = $("#about-me .section-title"); 
+            var $target2 = $("#myskills .section-title"); 
+            var $target3 = $("#portfolio .section-title"); 
+            var $target4 = $("#contact .section-title"); 
 
             if ($(window).scrollTop() >= scrollPoint1) {
                 $target1.addClass("active");
@@ -110,50 +110,50 @@ $(document).ready(function () {
                 $target4.removeClass("active");
             }
         }
-        $(window).on("scroll", addClassOnScroll); // 스크롤 이벤트에 함수 연결
+        $(window).on("scroll", addClassOnScroll); 
     };
 });
 
 
 $(document).ready(function () {
     $("#firstMenu").on("click", function (event) {
-        event.preventDefault(); // 기본 앵커 기능 제거
+        event.preventDefault(); 
 
-        var targetScroll = 800; // 이동할 스크롤 위치(px)
+        var targetScroll = 800; 
 
         $("html, body").animate(
             { scrollTop: targetScroll },
-            500 // 애니메이션 속도 (ms)
+            500 
         );
     });
     $("#secondMenu").on("click", function (event) {
-        event.preventDefault(); // 기본 앵커 기능 제거
+        event.preventDefault(); 
 
-        var targetScroll = 3040; // 이동할 스크롤 위치(px)
+        var targetScroll = 3040; 
 
         $("html, body").animate(
             { scrollTop: targetScroll },
-            500 // 애니메이션 속도 (ms)
+            500 
         );
     });
     $("#thirdMenu").on("click", function (event) {
-        event.preventDefault(); // 기본 앵커 기능 제거
+        event.preventDefault(); 
 
-        var targetScroll = 4190; // 이동할 스크롤 위치(px)
+        var targetScroll = 4190; 
 
         $("html, body").animate(
             { scrollTop: targetScroll },
-            500 // 애니메이션 속도 (ms)
+            500 
         );
     });
     $("#fourthMenu").on("click", function (event) {
-        event.preventDefault(); // 기본 앵커 기능 제거
+        event.preventDefault(); 
 
-        var targetScroll = 7700; // 이동할 스크롤 위치(px)
+        var targetScroll = 7700; 
 
         $("html, body").animate(
             { scrollTop: targetScroll },
-            500 // 애니메이션 속도 (ms)
+            500 
         );
     });
 });
@@ -174,7 +174,7 @@ $(document).ready(function() {
 });
 
 $(function() {
-    /* skills 호버 효과 */
+    /* skills box hover */
     $(".squared-box").mouseover(function() {
         $(this).children(".black-square").addClass("skillHover");
         $(this).find(".skill-title").addClass("skillHover");
@@ -209,8 +209,8 @@ $(function() {
         $(this).find(".bgImg").stop().css("background-size", "100%");
     })
 
-    //웹
-    //모달 열려
+    //web
+    //modal open
     $(".btn-list").find("a").click(function() {
         $(".blur-bg").addClass("on");
         $("#modal").fadeIn();
@@ -224,8 +224,8 @@ $(function() {
         $("body").css("overflow", "scroll");
         $("#topbtn").css("display", "block");
     })
-    //각 버튼마다 이미지 바꾸기
-    //고요화
+    //img attr
+    //web1
     $(".web-work-list > .goyohwa .project > a").click(function() {
         $("#modal img").attr({
             "src": "./images/project_GOYOHWA.jpg",
@@ -238,7 +238,7 @@ $(function() {
             "alt": "DesignGuide_GOYOHWA"
         })
     })
-    //다락
+    //web2
     $(".web-work-list > .darak .project > a").click(function() {
         $("#modal img").attr({
             "src": "./images/project_Darak.png",
@@ -247,26 +247,26 @@ $(function() {
     });
     $(".web-work-list > .darak .design-guide > a").click(function() {
         $("#modal img").attr({
-            "src": "",
+            "src": "./images/darak_designguide.jpg",
             "alt": "DesignGuide_DARAK"
         });
     });
-    //샐러디
+    //web3
     $(".web-work-list > .salady .project > a").click(function() {
         $("#modal img").attr({
-            "src": "",
+            "src": "./images/salady_pageview.png",
             "alt": "project_salady"
         });
     });
     $(".web-work-list > .salady .design-guide > a").click(function() {
         $("#modal img").attr({
-            "src": "",
+            "src": "./images/salady_pageview.png",
             "alt": "DesignGuide_salady"
         });
     });
 
-    //디자인
-    /* 모달 열기 */
+    //design
+    /* modal open */
     $(".design-work-list").find("a").click(function() {
         $(".blur-bg").addClass("on");
         $("#modal").fadeIn();
@@ -275,7 +275,7 @@ $(function() {
         $("#topbtn").css("display", "none");
     })
 
-    // 각 이미지 바꾸기
+    // img attr
     $("#detail").closest("a").click(function() {
         $("#modal").find("img").attr({
             "src": "./images/work_detailpage.png",
@@ -313,7 +313,7 @@ $(function() {
         });
     });
 
-    /* 모달 닫기 */
+    /* close btn */
     $("#close-btn").click(function() {
         $(".blur-bg").removeClass("on");
         $("#modal").fadeOut();
