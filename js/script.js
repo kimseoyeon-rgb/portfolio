@@ -254,13 +254,13 @@ $(function() {
     //web3
     $(".web-work-list > .salady .project > a").click(function() {
         $("#modal img").attr({
-            "src": "./images/salady_pageview.png",
+            "src": "./images/salady_project.png",
             "alt": "project_salady"
         });
     });
     $(".web-work-list > .salady .design-guide > a").click(function() {
         $("#modal img").attr({
-            "src": "./images/salady_pageview.png",
+            "src": "./images/design_salady.png",
             "alt": "DesignGuide_salady"
         });
     });
